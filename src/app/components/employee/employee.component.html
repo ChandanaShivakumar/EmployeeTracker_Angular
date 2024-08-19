@@ -1,0 +1,25 @@
+<div class="employee-container">
+  <h2>Employee Time Worked</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Total Time Worked</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees" [ngClass]="{'highlight': employee.totalTimeWorked < 100}">
+        <td>{{ employee.name }}</td>
+        <td>{{ employee.totalTimeWorked.toFixed(2) }} hours</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Employee Work Distribution</h2>
+<div class="chart-container">
+  <canvas id="employeePieChart" width="400" height="400"></canvas>
+  <div id="legend" class="legend"></div>
+</div>
+
+</div>

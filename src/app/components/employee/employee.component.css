@@ -1,0 +1,41 @@
+.employee-container {
+    text-align: center;
+  }
+  
+  table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 60%;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .highlight {
+    background-color: #FFC0CB;
+  }
+  
+  canvas {
+    margin: 20px auto;
+    display: block;
+  }
+
+  .chart-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .legend {
+    margin-top: 50px;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  
